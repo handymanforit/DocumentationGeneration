@@ -1,10 +1,8 @@
 # DocumentationGeneration
 
-# DocFX 
+# Using DocFX 
 
-<a href="https://blog.taranissoftware.com/document-your-net-code-with-docfx-and-github-actions"><img src="https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://blog.taranissoftware.com/document-your-net-code-with-docfx-and-github-actions&large=true&theme=dark" align="right" alt="Document your .NET code with DocFX and GitHub Actions"/></a>
-
-Demonstrates using DocFX with GitHub Actions to build and publish a documentation site for your .NET code. This repo accompanies my blog post [Document your .NET code with DocFX and GitHub Actions](https://blog.taranissoftware.com/document-your-net-code-with-docfx-and-github-actions).
+Demo using DocFX with GitHub Actions to build and publish a documentation site for your .NET code. 
 
 <div align="center">
 

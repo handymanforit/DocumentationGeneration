@@ -5,7 +5,7 @@
         {
           "src": "../../",
           "files": [
-            "src/ConsoleApp1/ConsoleApp1/**.csproj"
+            "src/ConsoleApp1/**.csproj"
           ]
         }
       ],

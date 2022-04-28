@@ -1,5 +1,14 @@
-# DocFX for CSharp
-Demo of using DocFX for CSharp Documentation
+# DocFX Example
+
+Demonstrates using DocFX with GitHub Actions to build and publish a documentation site for your .NET code. This repo accompanies my blog post [Document your .NET code with DocFX and GitHub Actions](https://blog.taranissoftware.com/document-your-net-code-with-docfx-and-github-actions).
+
+<div align="center">
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
+&nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+
+</div>
 
 ## Useful Links
 

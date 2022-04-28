@@ -5,7 +5,7 @@
         {
           "src": "../../",
           "files": [
-            "src/ConsoleApp1/**.csproj"
+            "src/ConsoleApp1/ConsoleApp1/**.csproj"
           ]
         }
       ],
@@ -20,14 +20,6 @@
         "files": [
           "api/**.yml",
           "api/index.md"
-        ]
-      },
-      {
-        "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
         ]
       }
     ],
@@ -49,7 +41,7 @@
         ]
       }
     ],
-    "dest": "../docs",
+    "dest": "../../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [

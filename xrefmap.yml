@@ -1,0 +1,28 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ConsoleApp1
+  name: ConsoleApp1
+  href: api/ConsoleApp1.html
+  commentId: N:ConsoleApp1
+  fullName: ConsoleApp1
+  nameWithType: ConsoleApp1
+- uid: ConsoleApp1.Example
+  name: Example
+  href: api/ConsoleApp1.Example.html
+  commentId: T:ConsoleApp1.Example
+  fullName: ConsoleApp1.Example
+  nameWithType: Example
+- uid: ConsoleApp1.Example.Divide(System.Int32,System.Int32)
+  name: Divide(Int32, Int32)
+  href: api/ConsoleApp1.Example.html#ConsoleApp1_Example_Divide_System_Int32_System_Int32_
+  commentId: M:ConsoleApp1.Example.Divide(System.Int32,System.Int32)
+  fullName: ConsoleApp1.Example.Divide(System.Int32, System.Int32)
+  nameWithType: Example.Divide(Int32, Int32)
+- uid: ConsoleApp1.Example.Divide*
+  name: Divide
+  href: api/ConsoleApp1.Example.html#ConsoleApp1_Example_Divide_
+  commentId: Overload:ConsoleApp1.Example.Divide
+  isSpec: "True"
+  fullName: ConsoleApp1.Example.Divide
+  nameWithType: Example.Divide

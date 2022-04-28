@@ -30,13 +30,13 @@ jobs:
         dotnet-version: 5.0.x
 
     - name: Restore Dependencies
-      run: dotnet restore src/ConsoleApp1.sln
+      run: dotnet restore src/ConsoleApp1/ConsoleApp1.sln
 
     - name: Build
-      run: dotnet build src/ConsoleApp1.sln --configuration Release --no-restore
+      run: dotnet build src/ConsoleApp1/ConsoleApp1.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test src/ConsoleApp1.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
+      run: dotnet test src/ConsoleApp1/ConsoleApp1.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
 
     - name: Copy Coverage To Predictable Location
       run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml

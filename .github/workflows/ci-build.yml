@@ -56,6 +56,13 @@ jobs:
         path: |
           coverage.cobertura.xml
           code-coverage-results.md
+          
+    - name: Add Coverage PR Comment
+      uses: marocchino/sticky-pull-request-comment@v2
+      if: github.event_name == 'pull_request'
+      with:
+        recreate: true
+        path: code-coverage-results.md
 
     - name: Upload Nuget Artifact
       uses: actions/upload-artifact@v2.3.0

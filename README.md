@@ -1,4 +1,4 @@
-# check-code-coverage [![ci status][ci image]][ci url] ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+# check-code-coverage ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
 # DocumentationGeneration
 
 # Using DocFX 

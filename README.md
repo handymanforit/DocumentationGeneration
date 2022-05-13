@@ -9,7 +9,7 @@ Demo using DocFX with GitHub Actions to build and publish a documentation site f
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-
+![check-code-coverage](https://img.shields.io/badge/code--coverage-80%-brightgreen)
 </div>
 
 ## Useful Links

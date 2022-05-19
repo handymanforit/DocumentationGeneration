@@ -1,7 +1,11 @@
 # check-code-coverage ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
 # DocumentationGeneration
 
+![example workflow](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg)
+
 # Using DocFX 
+
+
 
 Demo using DocFX with GitHub Actions to build and publish a documentation site for your .NET code. 
 

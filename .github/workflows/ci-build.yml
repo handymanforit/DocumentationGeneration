@@ -62,12 +62,6 @@ jobs:
         git add code-coverage-results.md
         git commit -m 'updating coverage'
     
-    - name: Push changes # push the output folder to your repo
-      uses: ad-m/github-push-action@main
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
-    
     - name: Add Coverage PR Comment
       uses: marocchino/sticky-pull-request-comment@v2
       if: github.event_name == 'pull_request'

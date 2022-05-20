@@ -58,7 +58,7 @@ jobs:
           code-coverage-results.md
           
     - name: add the code coverage results to main page.
-      if: github.actor!= "System"
+      if: github.event.pusher.name!= "System"
       run: |
         git config user.email "you@example.com"
         git config user.name "System"

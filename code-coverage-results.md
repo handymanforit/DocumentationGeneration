@@ -1,4 +1,4 @@
-#Coverage Details
+##Coverage Details
 ![Code Coverage](https://img.shields.io/badge/Code%20Coverage-33%25-critical?style=flat)
 
 Package | Line Rate | Branch Rate | Complexity | Health

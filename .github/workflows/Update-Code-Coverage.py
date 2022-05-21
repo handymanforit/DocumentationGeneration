@@ -8,6 +8,8 @@ class CIHelper:
             self.coveragefilename = coveragefilename
   
   def updatetestcoverage(self):
+    cwd = os.getcwd()
+    print("Current working directory: {0}".format(cwd))
     startindexstring = "[comment]: <> (coverage details start)"
     endindexstring = "[comment]: <> (coverage details end)"
     text_file = open(readmetemplatefilename, 'r', encoding='utf-8')

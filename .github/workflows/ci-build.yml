@@ -70,6 +70,7 @@ jobs:
       run: |
         git config user.email "you@example.com"
         git config user.name "System"
+        git add README.md
         git add code-coverage-results.md
         git commit -m 'updating coverage'
         git push

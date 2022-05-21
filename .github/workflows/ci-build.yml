@@ -63,7 +63,7 @@ jobs:
         python-version: 3.8 #install the python needed
     - name: execute py script # run the run.py to get the latest data
       run: |
-        python .github/workflows/Update-Code-Coverage.py readme.md code-coverage.md
+        python .github/workflows/Update-Code-Coverage.py ./readme.md ./code-coverage.md
     
     - name: add the code coverage results to main page.
       if: github.event.pusher.name!= 'System'

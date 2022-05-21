@@ -13,7 +13,7 @@ class CIHelper:
     print("Current working directory: {0}".format(cwd))
     
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
-    print files
+    print(files)
     
     startindexstring = "[comment]: <> (coverage details start)"
     endindexstring = "[comment]: <> (coverage details end)"

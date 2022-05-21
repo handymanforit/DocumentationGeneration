@@ -9,12 +9,6 @@ class CIHelper:
             self.coveragefilename = coveragefilename
   
   def updatetestcoverage(self):
-    cwd = os.getcwd()
-    print("Current working directory: {0}".format(cwd))
-    
-    files = [f for f in os.listdir('.') if os.path.isfile(f)]
-    print(files)
-    
     startindexstring = "[comment]: <> (coverage details start)"
     endindexstring = "[comment]: <> (coverage details end)"
     text_file = open(readmetemplatefilename, 'r', encoding='utf-8')

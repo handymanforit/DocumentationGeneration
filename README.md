@@ -1,4 +1,6 @@
-# check-code-coverage ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+# Code Coverage
+
+[comment]: ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
 
 [comment]: <> (coverage details start)
 

@@ -1,4 +1,9 @@
 # check-code-coverage ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+
+[comment]: <> (coverage details start)
+
+[comment]: <> (coverage details end)
+
 # DocumentationGeneration
 
 ![example workflow](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg)

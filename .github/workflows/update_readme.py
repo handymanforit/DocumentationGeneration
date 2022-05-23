@@ -71,6 +71,9 @@ class CIHelper:
     
     start_build_status_string = "[comment]: <> (build status start)"
     end_build_status_string = "[comment]: <> (build status end)"
+
+    start_project_doc_string = "[comment]: <> (documentation link start)"
+    end_project_doc_string = "[comment]: <> (documentation link end)"
     
     newdata = self.update_readme_code_coverage()
     newdata = self.update_build_status_summary(newdata)
@@ -90,6 +93,11 @@ class CIHelper:
        readmedata = self.delete_between(readmedata,
                                         start_build_status_string,
                                         end_build_status_string)
+
+    if start_project_doc_string in readmedata:
+       readmedata = self.delete_between(readmedata,
+                                        start_project_doc_string,
+                                        end_project_doc_string)
     
     readmedata = newdata + "\n\n" + readmedata
     

@@ -116,13 +116,7 @@ class CIHelper:
     covfile = open(self.coveragefilename, 'r', encoding='utf-8')
     covdata = covfile.read()
     
-    covdata =    "## Code Coverage" + 
-	         "\n\n" + 
-		 "![Badge for Branch Coverage](coverage/badge_branchcoverage.png)" + 
-		 "\n" + 
-		 "![Badge for Line Coverage](coverage/badge_linecoverage.png)" + 
-		 "\n" + "![Badge for Method Coverage](coverage/badge_methodcoverage.png)" + 
-		 "\n\n" + covdata
+    covdata =  "## Code Coverage" + "\n\n" + "![Badge for Branch Coverage](coverage/badge_branchcoverage.png)" + "\n" + "![Badge for Line Coverage](coverage/badge_linecoverage.png)" + "\n" + "![Badge for Method Coverage](coverage/badge_methodcoverage.png)" + "\n\n" + covdata
     
     newdata = self.insert_in_between(data,startindexstring,endindexstring,covdata)
     

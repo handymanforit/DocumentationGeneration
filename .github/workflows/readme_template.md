@@ -1,6 +1,6 @@
 [comment]: <> (build status start)
 ## Build Status
-![main build status for branch: <branch_name>](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg?branch=<branch_name>)
+![main build status for branch - <branch_name>](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg?branch=<branch_name>)
 [comment]: <> (build status end)
 
 [comment]: <> (coverage details start)

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.3333" branch-rate="1" version="1.9" timestamp="1653328834" lines-covered="1" lines-valid="3" branches-covered="0" branches-valid="0">
+<coverage line-rate="0.3333" branch-rate="1" version="1.9" timestamp="1653330853" lines-covered="1" lines-valid="3" branches-covered="0" branches-valid="0">
   <sources>
     <source>/home/runner/work/DocumentationGeneration/DocumentationGeneration/src/ConsoleApp1/</source>
   </sources>

@@ -102,6 +102,7 @@ jobs:
     - name: Sonarqube Analysis
       run: | 
         dotnet tool install --global dotnet-sonarscanner
+        dotnet tool install --global dotnet-coverage
         dotnet sonarscanner begin /k:"handymanforit_DocumentationGeneration" /o:"handymanforit" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=sonar_coverage.xml
         dotnet build src/ConsoleApp1/ConsoleApp1.sln --configuration Release
         dotnet-coverage collect 'dotnet test src/ConsoleApp1/ConsoleApp1.sln' -f xml -o 'sonar_coverage.xml'

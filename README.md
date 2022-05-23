@@ -1,3 +1,37 @@
+[comment]: <> (build status start)
+## Build Status
+![main build status for branch - main](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg?branch=main)
+
+[comment]: <> (build status end)
+
+[comment]: <> (coverage details start)
+
+## Code Coverage
+
+![Code Coverage](https://img.shields.io/badge/Code%20Coverage-33%25-critical?style=flat)
+
+Package | Line Rate | Branch Rate | Complexity | Health
+-------- | --------- | ----------- | ---------- | ------
+ConsoleApp1 | 33% | 100% | 2 | ❌
+**Summary** | **33%** (1 / 3) | **100%** (0 / 0) | **2** | ❌
+
+
+[comment]: <> (coverage details end)
+
+[comment]: <> (documentation link start)
+
+## Project Documentation
+
+Link to project Documentation: https://handymanforit.github.io/DocumentationGeneration
+
+[comment]: <> (documentation link end)
+
+
+
+
+
+
+
 
 # DocumentationGeneration
 

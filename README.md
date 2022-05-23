@@ -8,9 +8,9 @@
 
 ## Code Coverage
 
-![Badge for Branch Coverage](./coverage/badge_branchcoverage.png)
-![Badge for Line Coverage](./coverage/badge_linecoverage.png)
-![Badge for Method Coverage](./coverage/badge_methodcoverage.png)
+![Badge for Branch Coverage](coverage/badge_branchcoverage.svg)
+![Badge for Line Coverage](coverage/badge_linecoverage.svg)
+![Badge for Method Coverage](coverage/badge_methodcoverage.svg)
 
 ![Code Coverage](https://img.shields.io/badge/Code%20Coverage-33%25-critical?style=flat)
 

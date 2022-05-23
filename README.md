@@ -15,18 +15,6 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 
 [comment]: <> (coverage details end)
 
-
-
-
-
-# Code Coverage
-
-[comment]: ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
-
-
-
-
-
 # DocumentationGeneration
 
 ![example workflow](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg)

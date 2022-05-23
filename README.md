@@ -1,6 +1,6 @@
 [comment]: <> (build status start)
 ## Build Status
-![main build status for branch - main](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg?branch=main)
+![main build status for branch - main](https://github.com/handymanforit/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg?branch=main)
 
 [comment]: <> (build status end)
 
@@ -17,6 +17,28 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 
 
 [comment]: <> (coverage details end)
+
+[comment]: <> (documentation link start)
+
+## Project Documentation
+
+Link to project Documentation: https://handymanforit.github.io/handymanforit/DocumentationGeneration
+
+[comment]: <> (documentation link end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [comment]: <> (documentation link start)
 

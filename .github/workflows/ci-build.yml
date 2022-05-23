@@ -79,7 +79,10 @@ jobs:
           coverage.cobertura.xml
           code-coverage-results.md
           coverage
-     
+    
+    - name: Copy Coverage To Predictable Location
+      run: cp code-coverage-results.md coverage/README.md
+      
     - name: setup python
       uses: actions/setup-python@v2
       with:
@@ -99,6 +102,7 @@ jobs:
         git add coverage/badge_linecoverage.svg
         git add coverage/badge_methodcoverage.svg
         git add coverage/coverage_summary.mht
+        git add coverage/coverage.cobertura.xml
         git commit -m 'updating coverage'
         git push
     

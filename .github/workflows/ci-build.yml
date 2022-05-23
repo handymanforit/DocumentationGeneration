@@ -63,7 +63,7 @@ jobs:
         python-version: 3.8 #install the python needed
     - name: execute py script # run the run.py to get the latest data
       run: |
-        python .github/workflows/Update-Code-Coverage.py README.md code-coverage-results.md
+        python .github/workflows/update_readme.py .github/workflows/readme_template.md code-coverage.md README.md main {{github.repository}} ci-build.yml
     
     - name: add the code coverage results to main page.
       if: github.event.pusher.name!= 'System'

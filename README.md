@@ -15,6 +15,18 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 
 [comment]: <> (coverage details end)
 
+
+
+
+
+
+
+
+
+
+
+
+
 # DocumentationGeneration
 
 ![example workflow](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg)

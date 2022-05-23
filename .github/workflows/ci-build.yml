@@ -106,6 +106,7 @@ jobs:
         git add coverage/badge_methodcoverage.svg
         git add coverage/coverage_summary.mht
         git add coverage/coverage.cobertura.xml
+        git add coverage/README.md
         git commit -m 'updating coverage'
         git push
     

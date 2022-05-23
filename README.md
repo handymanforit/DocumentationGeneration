@@ -8,6 +8,10 @@
 
 ## Code Coverage
 
+![Badge for Branch Coverage](coverage/badge_branchcoverage.png)
+![Badge for Line Coverage](coverage/badge_linecoverage.png)
+![Badge for Method Coverage](coverage/badge_methodcoverage.png)
+
 ![Code Coverage](https://img.shields.io/badge/Code%20Coverage-33%25-critical?style=flat)
 
 Package | Line Rate | Branch Rate | Complexity | Health
@@ -25,6 +29,24 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 Link to project Documentation: https://handymanforit.github.io/DocumentationGeneration
 
 [comment]: <> (documentation link end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

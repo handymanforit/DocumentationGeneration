@@ -1,6 +1,7 @@
 [comment]: <> (build status start)
 ## Build Status
 ![main build status for branch - main](https://github.com/handymanforit/DocumentationGeneration/actions/workflows/ci-build.yml/badge.svg?branch=main)
+
 [comment]: <> (build status end)
 
 [comment]: <> (coverage details start)
@@ -16,6 +17,18 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 
 
 [comment]: <> (coverage details end)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -94,9 +94,9 @@ jobs:
         git config user.name "System"
         git add README.md
         git add code-coverage-results.md
-        git add coverage/badge_branchcoverage.png
-        git add coverage/badge_linecoverage.png
-        git add coverage/badge_methodcoverage.png
+        git add coverage/badge_branchcoverage.svg
+        git add coverage/badge_linecoverage.svg
+        git add coverage/badge_methodcoverage.svg
         git commit -m 'updating coverage'
         git push
     

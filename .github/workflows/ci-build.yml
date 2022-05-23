@@ -68,7 +68,8 @@ jobs:
         format: 'md'
         output: 'both'
         
-    
+    - name: Copy Coverage To Predictable Location
+      run: cp coverage/Summary.mht coverage/coverage_summary.mht
 
     - name: Upload Coverage Artifact
       uses: actions/upload-artifact@v2.3.0
@@ -97,6 +98,7 @@ jobs:
         git add coverage/badge_branchcoverage.svg
         git add coverage/badge_linecoverage.svg
         git add coverage/badge_methodcoverage.svg
+        git add coverage/coverage_summary.mht
         git commit -m 'updating coverage'
         git push
     

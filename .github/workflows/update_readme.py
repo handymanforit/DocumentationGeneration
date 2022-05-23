@@ -136,6 +136,7 @@ p1 = CIHelper(readmetemplatefilename,
                 coveragefilename,
                 readmefilename,
                 branchname,
-                owner_reponames,
+                owner,
+	        reponame,
                 workflowfilename)
 p1.update_readme()

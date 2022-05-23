@@ -1,6 +1,7 @@
-# Code Coverage
-
-[comment]: ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+[comment]: <> (build status start)
+## Build Status
+![main build status for branch: main](https://github.com/{{github.repository}}/actions/workflows/ci-build.yml/badge.svg?branch=main)
+[comment]: <> (build status end)
 
 [comment]: <> (coverage details start)
 
@@ -13,6 +14,18 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 
 
 [comment]: <> (coverage details end)
+
+
+
+
+
+# Code Coverage
+
+[comment]: ![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+
+
+
+
 
 # DocumentationGeneration
 

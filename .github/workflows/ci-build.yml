@@ -94,6 +94,40 @@ jobs:
       run: |
         python .github/workflows/update_readme.py .github/workflows/readme_template.md code-coverage-results.md README.md main ${GITHUB_REPOSITORY%/*}  ${GITHUB_REPOSITORY#*/} ci-build.yml
     
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.11
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v1
+      with:
+        path: ~\sonar\cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
+    - name: Cache SonarCloud scanner
+      id: cache-sonar-scanner
+      uses: actions/cache@v1
+      with:
+        path: .\.sonar\scanner
+        key: ${{ runner.os }}-sonar-scanner
+        restore-keys: ${{ runner.os }}-sonar-scanner
+    - name: Install SonarCloud scanner
+      if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
+      shell: powershell
+      run: |
+        New-Item -Path .\.sonar\scanner -ItemType Directory
+        dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
+    - name: Build and analyze
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      shell: powershell
+      run: |
+        .\.sonar\scanner\dotnet-sonarscanner begin /k:"handymanforit_DocumentationGeneration" /o:"handymanforit" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=sonar_coverage.xml
+        dotnet build src/ConsoleApp1/ConsoleApp1.sln --configuration Release
+        dotnet-coverage collect 'dotnet test src/ConsoleApp1/ConsoleApp1.sln' -f xml -o 'sonar_coverage.xml'
+        .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+        
     - name: add the code coverage results to main page.
       if: github.event.pusher.name!= 'System'
       run: |

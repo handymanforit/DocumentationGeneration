@@ -106,6 +106,8 @@ class CIHelper:
     covfile = open(self.coveragefilename, 'r', encoding='utf-8')
     covdata = covfile.read()
     
+    covdata = "## Code Coverage" + "\n\n" + covdata
+    
     newdata = self.insert_in_between(data,startindexstring,endindexstring,covdata)
     
     text_file.close()
@@ -117,6 +119,7 @@ class CIHelper:
     datastring = datastring.replace("<branch_name>",self.branchname)
     datastring = datastring.replace("<OWNER>/<REPOSITORY>",self.owner_reponames)
     datastring = datastring.replace("<WORKFLOW_FILE>",self.workflowfilename)
+    
     return datastring
   
 readmetemplatefilename = sys.argv[1] #"readme_template.md";

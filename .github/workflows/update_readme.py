@@ -7,13 +7,15 @@ class CIHelper:
 			    coveragefilename,
                 readmefilename,
                 branchname,
-                owner_reponames,
+                owner,
+                reponame,
                 workflowfilename):
             self.readmetemplatefilename = readmetemplatefilename
             self.coveragefilename = coveragefilename
             self.readmefilename = readmefilename
             self.branchname = branchname
-            self.owner_reponames = owner_reponames
+            self.owner = owner
+            self.reponame = reponame
             self.workflowfilename = workflowfilename
   
   def update_test_coverage(self):
@@ -117,7 +119,8 @@ class CIHelper:
   
   def update_build_status_summary(self,datastring):
     datastring = datastring.replace("<branch_name>",self.branchname)
-    datastring = datastring.replace("<OWNER>/<REPOSITORY>",self.owner_reponames)
+    datastring = datastring.replace("<OWNER>",self.owner)
+    datastring = datastring.replace("<REPOSITORY>",self.reponame)
     datastring = datastring.replace("<WORKFLOW_FILE>",self.workflowfilename)
     
     return datastring
@@ -126,8 +129,9 @@ readmetemplatefilename = sys.argv[1] #"readme_template.md";
 coveragefilename = sys.argv[2]#"code-coverage.md";
 readmefilename = sys.argv[3] #"readme.md"
 branchname = sys.argv[4] # main
-owner_reponames = sys.argv[5] # handymanforit/DocumentationGeneration
-workflowfilename = sys.argv[6] # ci-build.yml
+owner = sys.argv[5] # handymanforit
+reponame = sys.argv[6] # DocumentationGeneration
+workflowfilename = sys.argv[7] # ci-build.yml
 p1 = CIHelper(readmetemplatefilename,
                 coveragefilename,
                 readmefilename,

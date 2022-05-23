@@ -22,6 +22,12 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 **Summary** | **33%** (1 / 3) | **100%** (0 / 0) | **2** | ❌
 
 
+[View Details](coverage/coverage_summary.mht)
+
+[View Xml](coverage/coverage.cobertura.xml)
+
+
+
 [comment]: <> (coverage details end)
 
 [comment]: <> (documentation link start)
@@ -31,6 +37,24 @@ ConsoleApp1 | 33% | 100% | 2 | ❌
 Link to project Documentation: https://handymanforit.github.io/DocumentationGeneration
 
 [comment]: <> (documentation link end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

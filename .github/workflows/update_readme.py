@@ -80,10 +80,14 @@ class CIHelper:
     text_file.close()
     
     if startindexstring in readmedata:
-    readmedata = self.delete_between(readmedata,startindexstring,endindexstring)
+       readmedata = self.delete_between(readmedata,
+                                        startindexstring,
+                                        endindexstring)
     
     if start_build_status_string in readmedata:
-    readmedata = self.delete_between(readmedata,start_build_status_string,end_build_status_string)
+       readmedata = self.delete_between(readmedata,
+                                        start_build_status_string,
+                                        end_build_status_string)
     
     readmedata = newdata + "\n\n" + readmedata
     

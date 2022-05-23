@@ -118,6 +118,8 @@ class CIHelper:
     
     covdata =  "## Code Coverage" + "\n\n" + " Branch Coverage: ![Badge for Branch Coverage](coverage/badge_branchcoverage.svg)" + "\n\n" + "Line Coverage: ![Badge for Line Coverage](coverage/badge_linecoverage.svg)" + "\n\n" + "Method Coverage: ![Badge for Method Coverage](coverage/badge_methodcoverage.svg)" + "\n\n" + covdata
     
+    covdata = covdata + "\n\n" + "[View Details](coverage/coverage_summary.mht)" + "\n\n" + "[View Xml](coverage/coverage.cobertura.xml)" + "\n\n"
+	
     newdata = self.insert_in_between(data,startindexstring,endindexstring,covdata)
     
     text_file.close()
